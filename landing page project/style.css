@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  color: black;
+  background: whitesmoke;
+}
+
+/* main-container styles */
+.main-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* navbar styles */
+.navbar {
+  box-shadow: 0 4px 8px orange;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: dark grey;
+  font-weight: 550;
+}
+
+.auth-buttons {
+  display: flex;
+}
+
+.auth-buttons .login,
+.auth-buttons .signup {
+  text-decoration: none;
+  padding: 15px 15px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.auth-buttons .login {
+  color: orange;
+}
+
+.auth-buttons .signup {
+  background-color: whitesmoke;
+  color: orange;
+  border-radius: 5px;
+}
+
+/* Hero section */
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+  color: black;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: whitesmoke;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+.hero-content h1 {
+  font-size: 46px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero-content span {
+  color: orange; /* span */
+}
+
+.cta-buttons {
+  margin-bottom: 20px;
+}
+
+.cta {
+  text-decoration: none;
+  padding: 15px 30px;
+  color: dark grey;
+  margin-right: 15px;
+  border-radius: 5px;
+  background-color: orange; /* button */
+}
+
+.customer-reviews {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.customer-reviews span {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* Search filters */
+
+.search-filters {
+  display: flex;
+  justify-content: space-between;
+  background: dark grey;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+  box-shadow: 0 4px 8px orange;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+
+.filter-item label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.filter-item input {
+  padding: 10px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+}
+
+.explore-now-btn {
+  background-color: orange;
+  border: none;
+  color: dark grey;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Blog page */
+
+.blog {
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+  color: black;
+  position: relative;
+  margin: 40px;
+}
+
+.blog::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: whitesmoke;
+}
+
+/* .blog .blog-section {
+  position: relative;
+  z-index: 2;
+} */
+
+.blog-section h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 70px;
+  gap: 2rem;
+}
+
+.blog-section span {
+  color: orange; /* span */
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  place-items: center;
+}
+
+.blog-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px orange;
+  max-width: 600px;
+  margin-bottom: 90px;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-card .content {
+  padding: 10px;
+}
+
+.blog-card h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.blog-card .date {
+  font-size: 0.9rem;
+  color: grey;
+}
+
+.subscribe {
+  background-color: orange;
+  color: dark grey;
+  padding: 50px;
+  text-align: center;
+}
+
+.subscribe input {
+  padding: 10px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.subscribe button {
+  background-color: dark grey;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* footer css */
+
+footer {
+  background-color: whitesmoke;
+  padding: 50px;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.links div {
+  margin: 0 20px;
+}
+
+.links div h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.links div a {
+  display: block;
+  color: grey;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.social {
+  margin-bottom: 40px;
+}
+
+.social a {
+  margin: 0 10px;
+  color: grey;
+  text-decoration: none;
+}
+
+.copyright {
+  display: flex;
+  font-size: 14px;
+  color: grey;
+}
+
+.copyright-right {
+  margin-left: auto;
+}
+
+/* Responsive media */
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .search-filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .filter-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .blog-section h1 {
+    font-size: 30px;
+  }
+
+  .subscribe button {
+    margin-top: 8px;
+  }
+}
